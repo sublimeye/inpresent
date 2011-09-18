@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Description" content="" />
+	<title>Untitled Document</title>
+	<link href='layout.css' rel="stylesheet" type="text/css" />
+	<link href='typography.css' rel="stylesheet" type="text/css" />
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href='ie.css' /><![endif]-->
+	<link rel="Shortcut Icon" type="image/x-icon" href="" />
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.wrapper {
+			position: relative;
+			background: #fefefe;
+			padding: 0 50px;
+			margin: 0 auto;
+			min-width: 1100px;
+		}
+
+		.left-sidebar {
+			float: left;
+			width: 50%;
+			background: #eaeaae;
+			min-height: 300px;
+		}
+
+			.left-sidebar .content {
+				position: relative;
+				right: 150px;
+				background: #eeaaff;
+				min-height: 200px;
+				width: 250px;
+				margin: 0 auto;
+			}
+
+		.right-sidebar {
+			float: left;
+			width: 50%;
+			background: #aeefef;
+			min-height: 300px;
+			clear: right; /* ie6,7 hi */
+			margin-right: -100px; /* ie6, 7 */
+		}
+
+			.right-sidebar .content {
+				position: relative;
+				left: 150px;
+				background: #eeaaff;
+				min-height: 200px;
+				width: 250px;
+				margin: 0 auto;
+			}
+
+		.section {
+			position: absolute;
+			width: 600px;
+			background: #eeeeee;
+			left: 50%;
+			margin-left: -300px;
+			z-index: 1;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+	<div class="left-sidebar">
+		<div class="content">
+			left sidebar
+		</div>
+	</div>
+
+	<div class="right-sidebar">
+		<div class="content">right ssideabr</div>
+	</div>
+
+	<div class="section">
+		<div class="content">middle section</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -27,6 +27,30 @@ html[xmlns] .clearfix{display:block}
 
 /*   1. Base layout
 --------------------------------*/
+body {
+	background: #F4ECD5;
+}
+
+.page {
+	min-width: 1102px;
+	max-width: 1302px;
+	margin: 0 auto;
+	padding: 0 49px;
+}
+
+.page-header {
+
+}
+
+.page-body {
+	background: #FFFFFF;
+	border: 1px solid #EEE2C2;
+	border-bottom: 0;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: -2px 0 4px #EEE2C2;
+}
+
 
 /*   2. GLOBAL STYLE
 --------------------------------*/
@@ -36,3 +60,104 @@ html[xmlns] .clearfix{display:block}
 
 /*   4. HEADER
 --------------------------------*/
+.page-header-nav {
+	position: relative;
+	min-height: 24px;
+	background: #FDFBF4;
+	border: 1px solid #EFE4C5;
+	border-width: 0px 1px 1px 1px;
+	box-shadow: 0 1px 3px #F1E7CB;
+}
+
+.header-nav-list li {
+	float: left;
+	list-style: none;
+	margin: 0 16px;
+}
+
+.header-nav-list a {
+	display: inline-block;
+}
+
+.page-header-nav .active {
+	min-height: 24px;
+	border-bottom: 1px solid #CE3106;
+	box-shadow: 0 0 6px  #F3F2F2 inset
+}
+
+.header-nav-addon {
+	float: right;
+	line-height: 20px;
+}
+
+.header-nav-addon .ico {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background: #E8AB00;
+}
+
+.page-header-content {
+	position: relative;
+}
+
+.header-logo {
+	position: absolute;
+	left: 0;
+	top: 26px;
+}
+
+.header-info {
+	width: 50%;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #efefef;
+}
+
+	.header-phones {
+		float: left;
+	}
+
+	.header-search {
+		float: left;
+		clear: left;
+	}
+
+	.header-timetable {
+		float: right;
+	}
+
+		.header-timetable .days {
+			padding-top: 21px;
+			float: left;
+		}
+
+		.header-timetable .time {
+			float: left;
+		}
+
+		.header-timetable .title {
+			line-height: 20px;
+		}
+
+		.header-timetable .online {
+			clear: left;
+		}
+
+.header-cart {
+	position: absolute;
+	right: -49px;
+	top: 0;
+}
+
+.order-details {
+	background: #F4EDDA;
+	border: 1px solid #E08969;
+	/*border-right: 0;*/
+}
+
+.page-header-categories {
+	
+}
