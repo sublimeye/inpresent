@@ -1,0 +1,38 @@
+/*   Table of contents
+
+0. GLOBAL RESET [ +element style reset and minifixes ]
+1. BASE LAYOUT  [ LAYOUT. Style of all base elements like body, wrapper, header, content, extras, footer, etc. ]
+2. GLOBAL STYLE [ Global styles ]
+3. CONTENT      [ All elements fully relative to content and belong to it ]
+4. HEADER       [ Header, Logo, Header-Menu, etc ]
+5. FOOTER       [ Copyright, developers info etc ]
+
+(c) SublimeYe, 2011
+Skype: sublimeye
+
+--------------------------------*/
+
+/*   0. Global reset + holy shit ;)
+--------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;vertical-align:baseline}
+input,button,textarea,select{margin:0;font-size:1em}
+table{border-collapse:collapse;border-spacing:0}
+blockquote,q{quotes:none}
+dfn,i,cite,var,address,em{font-style:normal}
+th,b,strong,h1,h2,h3,h4,h5,h6{font-weight:normal}
+/* CLEAR FIX*/
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.clearfix{display:inline-block}
+html[xmlns] .clearfix{display:block}
+
+/*   1. Base layout
+--------------------------------*/
+
+/*   2. GLOBAL STYLE
+--------------------------------*/
+
+/*   3. CONTENT
+--------------------------------*/
+
+/*   4. HEADER
+--------------------------------*/

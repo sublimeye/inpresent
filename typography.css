@@ -1,0 +1,27 @@
+/*   Typography & Colors
+*    (c) SublimeYe, 2011
+*    Skype: sublimeye
+--------------------------------*/
+body{font:13px/1.4 Arial,Helvetica,sans-serif}
+.sans{font-family:Arial,Helvetica,sans-serif}
+
+h1,h2,h3,h4,h5,h6{font-family:Georgia,"Times New Roman",Times,serif;font-weight:normal}
+p{line-height:21px}
+
+.content p{line-height:21px;margin-bottom:21px}
+
+strong{font-weight:bold}
+h1{font-size:30px;line-height:30px;margin: 24px 0 20px 0}
+h2{font-size:22px;line-height:28px; margin: 20px 0 15px 0}
+h3{font-size:18px; margin:  20px 0 15px 0}
+
+.ind-column-left h1 {margin-top: 0}
+.inset h3 {margin:  20px 0 3px 0; line-height: 1.2em}
+/*   Links
+--------------------------------*/
+a{color:#1348a7;text-decoration:underline}
+a:visited{/*color: #704eaf;*/}
+a:hover{color:#62730b}
+
+/* GLOBAL
+--------------------------------*/
