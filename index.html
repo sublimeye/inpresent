@@ -121,14 +121,228 @@
 	<!-- Page BODY -->
 	<div class="page-body">
 
-		<div class="presents-selection-wizard">
+		<div class="presents-wizard">
+			<!--LEFT COLUMN-->
+			<div class="aside left-column">
+				<div class="content">
+					<form action="">
+						<p class="category-select divider">
+							<select name="" id="">
+								<option value="0">Выберите категорию</option>
+								<option value="1">категория какая-то</option>
+							</select>
+						</p>
+						<p class="price-select">
+							Цена: от <input type="number" min="0" /> до <input type="number" min="0" /> рублей
+						</p>
+						<div class="price-range-select divider">
 
+						</div>
+						<div class="manu-select divider">
+							<p class="title">Производитель:</p>
+							<ul class="manu-list">
+								<li><label><input type="checkbox" /><span>S.T.Dupont</span></label></li>
+								<li><label><input type="checkbox" /><span>Waterman</span></label></li>
+								<li><label><input type="checkbox" /><span>Sheaaaf</span></label></li>
+								<li><label><input type="checkbox" /><span>Bosser</span></label></li>
+								<li><label><input type="checkbox" /><span>Watermann</span></label></li>
+								<li><label><input type="checkbox" /><span>Sea houU</span></label></li>
+								<li><label><input type="checkbox" /><span>Suckkie</span></label></li>
+							</ul>
+						</div>
+
+						<div class="sumbit-wizard">
+							<input class="btn-def" type="submit" value="Подобрать" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- RIGHT COLUMN -->
+			<div class="aside right-column">
+				<div class="content">
+					<ul class="sub-category-list">
+						<li><a href="#">Мужчинам</a></li>
+						<li><a href="#">Женщинам</a></li>
+						<li><a href="#">Детям</a></li>
+						<li><a href="#">Предметы интерьера</a></li>
+						<li><a href="#">Корпоративные сувениры</a></li>
+						<li><a href="#">Подарки для &laquo;Дев&raquo;</a></li>
+					</ul>
+				</div>
+
+				<div class="addon-content">
+					<a class="calendar" href="#">Календарь праздников</a>
+				</div>
+			</div>
+
+			<!-- MIDDLE CONTENT / Accordion -->
+			<div class="section accordion-container">
+				
+			</div>
+		</div><!--//presents-wizard-->
+
+		<!-- INTRO SECTION -->
+		<div class="intro-section">
+			<div class="aside-news">
+				<div class="heading">
+					<span class="ext-lnk"><a href="#">Посмотреть все новости</a></span>
+					<ul class="news-list">
+						<li>
+							<div class="date"><span>5</span> сентября</div>
+							<p>Цикл, не учиытвал влоыд дышы ылв оаышвоа между удреолв лы.</p>
+						</li>
+						<li>
+							<div class="date"><span>25</span> января</div>
+							<p>Цикл, не учиытвал влоыд дышы ылв оаышвоа между удреолв лы.</p>
+						</li>
+					</ul>
+				</div>
+			</div><!--//news-->
+
+			<h1>Заголовок h1</h1>
+			<p>текст</p>
+		</div><!--//intro section-->
+
+		<div class="product-track presents-track">
+			<div class="track-controls">
+				<div class="track-caption"><!--подарки--></div>
+				<div class="controls">
+					<a class="left" href="#"></a>
+					<a class="right" href="#"></a>
+				</div>
+				<div class="ext-lnk"><a href="#">Посмотреть все подарки</a></div>
+			</div>
+
+			<ul class="track-list">
+				<li class="track-item">
+					<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+					<div class="fig">
+						<img src="" alt="" />
+						<span class="caption">Артикул: <em>S02939372</em></span>
+					</div>
+					<div class="actions">
+						<div class="price">
+							<p>Цена: <b>1 110</b> Р.</p>
+						</div>
+						<div class="order">
+							<input type="text" class="item-qtty" />
+							<a href="#"><i class="ico ico-minicart"></i>Купить</a>
+						</div>
+						<div class="availability available">в наличии</div>
+						<div class="features">
+							<label><input type="checkbox" /> Уже в сравнении</label>
+							<label><input type="checkbox" /> Отложить</label>
+						</div>
+						<div class="detailed-lnk">
+							<a href="#">Подробнее<i class="ico det-lnk"></i></a>
+						</div>
+					</div>
+				</li><!--track item-->
+				<!-- ================================= -->
+			</ul>
 		</div>
-	</div>
+
+		<p>фывлоаф ылдвфраывафылрвафывафвафыд лвфр влдафыор вдафырд вфораыдв афыдл афдлырв флдаыорвдафлоры дворафыдвлор а</p>
+
+		<div class="product-track sale-track">
+			<div class="track-controls">
+				<div class="track-caption"><!--подарки--></div>
+				<div class="controls">
+					<a class="left" href="#"></a>
+					<a class="right" href="#"></a>
+				</div>
+				<div class="ext-lnk"><a href="#">Посмотреть все подарки</a></div>
+			</div>
+
+			<ul class="track-list">
+				<li class="track-item">
+					<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+					<div class="fig">
+						<img src="" alt="" />
+						<span class="caption">Артикул: <em>S02939372</em></span>
+					</div>
+					<div class="actions">
+						<div class="price sale">
+							<p class="old-price"><i class="ico ico-sale"></i><del>1 300 Р.</del></p>
+							<p>Цена: <b>1 110</b> Р.</p>
+						</div>
+						<div class="order">
+							<input type="text" class="item-qtty" />
+							<a href="#"><i class="ico ico-minicart"></i>Купить</a>
+						</div>
+						<div class="availability toorder">под заказ</div>
+						<div class="features">
+							<label><input type="checkbox" /> Уже в сравнении</label>
+							<label><input type="checkbox" /> Отложить</label>
+						</div>
+						<div class="detailed-lnk">
+							<a href="#">Подробнее<i class="ico det-lnk"></i></a>
+						</div>
+					</div>
+				</li><!--track item-->
+				<!-- ================================= -->
+			</ul>
+		</div>
+
+		<p>фывлоаф ылдвфраывафылрвафывафвафыд лвфр влдафыор вдафырд вфораыдв афыдл афдлырв флдаыорвдафлоры дворафыдвлор а</p>
+
+		<div class="promo-container"><img src="" alt="" /></div>
+
+		<div class="additional-columns">
+			<div class="column column-left">
+				<h3>фдывлоа фыдовдафлыо вдалфыдвфыафлавфоы двлафыав</h3>
+				<p></p>
+			</div>
+
+			<div class="column column-right">
+				<h3>фдывлоа фыдовдафлыо вдалфыдвфыафлавфоы двлафыав</h3>
+				<p></p>
+			</div>
+		</div><!--//additional-columns-->
+
+	</div><!--//page-body-->
 
 	<div class="page-footer">
+		<div class="page-footer-content">
+			<div class="footer-logo"></div>
+			<ul class="footer-nav">
+				<li class="ar"><a href="#">О компании</a></li>
+				<li class="ar"><a href="#">Оптовикам</a></li>
+				<li class="ar"><a href="#">Контакты</a></li>
+				<li><a href="#">&nbsp;</a></li>
+				<li><a href="#"><i class="ico ico-mail"></i>Обратная связь</a></li>
+				<li><a href="#"><i class="ico ico-sitemap"></i>Карта сайта</a></li>
+				<li><a href="#">&nbsp;</a></li>
+				<li><small>(495)</small> <big>589-69-91</big></li>
+				<li><small>(495)</small> <big>679-69-91</big></li>
+			</ul>
+		</div>
 
-	</div>
+		<div class="page-footer-categories">
+			<ul class="footer-categories-list">
+				<li><a href="#">Ручки</a></li>
+				<li><a href="#">Часы</a></li>
+				<li><a href="#">Аксессуары для алкоголя</a></li>
+				<li><a href="#">Бизнес сувениры</a></li>
+				<li><a href="#">Аксессуары для курения</a></li>
+				<li><a href="#">Ежедневники, планинги</a></li>
+				<li><a href="#">Изделия из кожи</a></li>
+				<li><a href="#">Игры, игровые наборы</a></li>
+				<li><a href="#">Брелоки, шкатулки</a></li>
+			</ul><!--//footer-categories-list-->
+		</div><!--//page-footer-categories-->
+
+		<div class="footer-promo">
+			<img src="" alt="" />
+		</div>
+		<div class="sub-footer">
+			<div class="copy">&copy; &laquo;Полезный магазин &laquo;InPresent&raquo;&raquo;, 2006 &ndash; 2011</div>
+			<div class="privacy">Вся информация на сайте носит справочный характер и не является публчной офертой</div>
+			<div class="counters"><img src="" alt="" /></div>
+			<div class="dev">Designed by <a href="#">PAIVE Media Group</a></div>
+		</div>
+	</div><!-- //page-footer -->
+
 </div>
 
 </body>
