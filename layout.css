@@ -32,6 +32,7 @@ body {
 }
 
 .page {
+	position: relative;
 	min-width: 1102px;
 	max-width: 1302px;
 	margin: 0 auto;
@@ -43,11 +44,11 @@ body {
 }
 
 .page-body {
-	background: #FFFFFF;
 	border: 1px solid #EEE2C2;
-	border-bottom: 0;
+	border-width: 0 3px 0 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	background: #FFFFFF;
 	box-shadow: -2px 0 4px #EEE2C2;
 }
 
@@ -111,6 +112,7 @@ body {
 
 .header-info {
 	width: 50%;
+	min-height: 125px;
 	margin: 0 auto;
 	overflow: hidden;
 	background: #efefef;
@@ -155,9 +157,40 @@ body {
 .order-details {
 	background: #F4EDDA;
 	border: 1px solid #E08969;
-	/*border-right: 0;*/
 }
 
 .page-header-categories {
-	
+	min-height: 34px;
+	border: 1px solid #EEE2C2;
+	border-width: 3px 3px 0 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: -2px 0 4px #EEE2C2;
+	background: #fff;
+	padding-top: 20px;
+}
+
+.categories-list {
+	width: 100%;
+}
+
+.page-header-categories td {
+	background: #502317;
+	height: 34px;
+	line-height: middle;
+	text-align: center;
+}
+
+.page-floating-cart {
+	position: fixed;
+	right: 0;
+	outline: 1px solid red;
+	top: 200px;
+	background: #fff;
+}
+
+@media all and (max-width: 1200px) {
+	.page-floating-cart {
+		position: absolute;
+	}
 }
