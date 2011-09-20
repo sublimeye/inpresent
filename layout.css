@@ -44,6 +44,7 @@ body {
 }
 
 .page-body {
+	padding: 20px 40px 0 40px;
 	border: 1px solid #EEE2C2;
 	border-width: 0 3px 0 3px;
 	-moz-border-radius: 3px;
@@ -52,10 +53,27 @@ body {
 	box-shadow: -2px 0 4px #EEE2C2;
 }
 
+.g-unshift {
+	margin: 0 -40px;
+}
 
 /*   2. GLOBAL STYLE
 --------------------------------*/
-
+.btn-def {
+	text-align: center;
+	border: 1px solid #A6A6A6;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 2px 3em;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 38%, #ececec 38%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(38%,#f5f5f5), color-stop(38%,#ececec), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f5f5f5 38%,#ececec 38%,#eeeeee 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#f5f5f5 38%,#ececec 38%,#eeeeee 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#f5f5f5 38%,#ececec 38%,#eeeeee 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+	background: linear-gradient(top, #ffffff 0%,#f5f5f5 38%,#ececec 38%,#eeeeee 100%);
+}
 /*   3. CONTENT
 --------------------------------*/
 
@@ -193,4 +211,299 @@ body {
 	.page-floating-cart {
 		position: absolute;
 	}
+}
+
+/* presents wizard
+--------------------------------*/
+.presents-wizard {
+	position: relative;
+	border: 1px solid #F4F0E7;
+	border-width: 1px 0;
+	background: #FAF9F8;
+}
+
+.presents-wizard .aside {
+	position: relative;
+	float: left;
+	width: 50%;
+	min-height: 360px;
+}
+
+.presents-wizard .aside .content {
+	position: relative;
+	width: 220px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.presents-wizard .left-column {
+}
+
+.presents-wizard .left-column .content {
+	right: 150px;
+	background: #eaeaea;
+}
+
+.presents-wizard .right-column {
+	clear: right;
+	margin-right: -1px;
+}
+
+.presents-wizard .right-column .content {
+	left: 150px;
+}
+
+.presents-wizard .section {
+	position: absolute;
+	top:0;
+	width: 600px;
+	height: 200px;
+	left: 50%;
+	margin-left: -300px;
+	z-index: 1;
+	background: #aaa;
+}
+
+.presents-wizard .addon-content {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 300px;
+
+	margin: 0 15px;
+	border: 0 solid #EAE8E6;
+	border-top-width: 1px;
+
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	text-align: center;
+	background: #fafaf9;
+	background: -moz-linear-gradient(top, #fafaf9 0%, #f6f4f3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafaf9), color-stop(100%,#f6f4f3));
+	background: -webkit-linear-gradient(top, #fafaf9 0%,#f6f4f3 100%);
+	background: -o-linear-gradient(top, #fafaf9 0%,#f6f4f3 100%);
+	background: -ms-linear-gradient(top, #fafaf9 0%,#f6f4f3 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafaf9', endColorstr='#f6f4f3',GradientType=0 );
+	background: linear-gradient(top, #fafaf9 0%,#f6f4f3 100%);
+}
+
+.presents-wizard li {
+	list-style: none;
+}
+
+.sub-category-list li {
+	position: relative;
+	border-bottom: 1px solid #fff;
+}
+.sub-category-list li:after {
+	content: '';
+	display: block;
+	width: 100%;
+	bottom: 0;
+	border-bottom: 1px solid #F1EFE7;
+}
+
+/* selects
+--------------------------------*/
+.price-select input {
+	width: 40px;
+}
+
+.manu-list {
+	margin-bottom: 28px;
+}
+
+.manu-list li {
+	float: left;
+	width: 50%;
+	clear: right;
+}
+
+/* intro section
+--------------------------------*/
+.intro-section {
+	margin-right: 320px;
+	*margin-right: 284px;
+}
+
+.aside-news {
+	float: right;
+	width: 326px;
+	margin-right: -360px;
+}
+
+.aside-news li {
+	list-style: none;
+}
+
+.aside-news .heading {
+	position: relative;
+	min-height: 36px;
+	margin-bottom: 20px;
+	padding-left: 135px;
+	border-bottom: 1px solid #CB9B73;
+}
+
+.aside-news .heading .ext-lnk {
+	position: absolute;
+	top:18px;
+	display: inline-block;
+	background: #FFFFFF;
+	padding: 3px 10px;
+}
+
+
+.news-list .date span {
+	display: inline-block;
+	min-width: 16px;
+	padding: 0 2px;
+	border-bottom: 1px solid #A68261;
+	background: #dcbda1;
+	background: -moz-linear-gradient(top, #dcbda1 0%, #bd9e82 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcbda1), color-stop(100%,#bd9e82));
+	background: -webkit-linear-gradient(top, #dcbda1 0%,#bd9e82 100%);
+	background: -o-linear-gradient(top, #dcbda1 0%,#bd9e82 100%);
+	background: -ms-linear-gradient(top, #dcbda1 0%,#bd9e82 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcbda1', endColorstr='#bd9e82',GradientType=0 );
+	background: linear-gradient(top, #dcbda1 0%,#bd9e82 100%);
+
+	text-align: right;
+}
+
+.news-list p {
+	padding-left: 1.5em;
+}
+
+/* product-track
+--------------------------------*/
+.product-track {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.track-list-container {
+	overflow: hidden;
+	overflow-x: scroll;
+}
+
+.track-controls {
+	position: relative;
+	height: 60px;
+	background: #efaeaa;
+}
+
+.track-list {
+	width: 5000px;
+}
+
+.track-controls .controls {
+	background: red;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.track-controls .ext-lnk {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 45px;
+}
+
+.track-item {
+	position: relative;
+	float: left;
+	width: 350px;
+	padding-left: 15px;
+	list-style: none;
+}
+
+.track-item:after {
+	position: absolute;
+	right: 0;
+	top: 0;
+	content: '';
+	width: 1px;
+	height: 100%;
+	background: #e8e8e8;
+	background: -moz-linear-gradient(top, #e8e8e8 0%, #fbfbfb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(100%,#fbfbfb));
+	background: -webkit-linear-gradient(top, #e8e8e8 0%,#fbfbfb 100%);
+	background: -o-linear-gradient(top, #e8e8e8 0%,#fbfbfb 100%);
+	background: -ms-linear-gradient(top, #e8e8e8 0%,#fbfbfb 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#fbfbfb',GradientType=0 );
+	background: linear-gradient(top, #e8e8e8 0%,#fbfbfb 100%);
+}
+
+/* additional columns
+--------------------------------*/
+.additional-columns .column {
+	float: left;
+	width: 50%;
+	clear: right;
+}
+
+.additional-columns .content {
+	margin: 0 20px;
+}
+
+/* footer
+--------------------------------*/
+.page-footer {
+	position: relative;
+	/*background: #552519;*/
+}
+
+.page-footer-content {
+	float: left;
+}
+
+.footer-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.footer-nav {
+	width: 350px;
+}
+
+.footer-nav li {
+	float: left;
+	width: 33%;
+	list-style: none;
+}
+
+.footer-categories-list {
+	float: left;
+	width: 51%;
+	margin-left: 30px;
+}
+
+.footer-categories-list li {
+	float: left;
+	width: 33%;
+	list-style: none;
+	outline: 1px solid red;
+}
+
+.sub-footer {
+	position: relative;
+	clear: both;
+}
+
+.sub-footer div {
+	float: left;
+}
+
+.sub-footer .privacy {
+	width: 50%;
+	outline: 1px solid red;
+}
+
+.sub-footer .dev {
+	position: absolute;
+	right: 0;
+	top: 0;
 }
