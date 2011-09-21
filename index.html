@@ -22,7 +22,7 @@
 			<ul class="header-nav-list">
 				<li><a href="#">О компании</a></li>
 				<li><a href="#">Как заказать</a></li>
-				<li><a class="active" href="#">Способы оплаты </a></li>
+				<li><a class="active">Способы оплаты </a></li>
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Гарантия</a></li>
 				<li><a href="#">Скидки</a></li>
@@ -32,25 +32,38 @@
 			</ul>
 
 			<div class="header-nav-addon">
-				<a class="ico ico-lnk-home" href="#"><!--на главную--></a>
-				<a class="ico ico-lnk-mail" href="mailto:email@me.com"><!--email--></a>
-				<a class="ico ico-lnk-sitemap" href="#"><!--sitemap--></a>
+				<a class="ico ico-lnk-home" title="На главную" href="#"><!--на главную--></a>
+				<a class="ico ico-lnk-mail" title="Связаться с нами" href="mailto:email@me.com"><!--email--></a>
+				<a class="ico ico-lnk-sitemap" title="Карта сайта" href="#"><!--sitemap--></a>
 			</div>
 		</div><!--page header nav-->
 
 		<div class="page-header-content">
-			<div class="header-logo"><a href=""><img src="" alt="InPresent - полезный магазин" /></a></div>
+			<div class="header-logo"><a href=""><img src="img/header_logo.png" width="166" height="95" alt="InPresent - полезный магазин" /></a></div>
 
 			<div class="header-info">
-				<!-- PHONES -->
-				<div class="header-phones">
+				<div class="header-info-container">
+					<!-- PHONES -->
+					<div class="header-phones">
 					<span class="phone">
-						(495)<big>679-40-43</big>
+						(495) <big>679-40-43</big>
 					</span>
-					<span class="phone">
-						(495)<big>589-40-43</big>
+					<span class="phone phone-right">
+						(495) <big>589-40-43</big>
 					</span>
-				</div><!--//phones-->
+					</div>
+					<!--//phones-->
+
+					<!-- SEARCH -->
+					<div class="header-search">
+						<form action="">
+							<input type="text" placeholder="Какой подарок желаете найти" /><button class="btn-search"><i class="ico ico-btn-search"></i>Найти</button>
+						</form>
+						<p class="search-example">Например <a href="#">Ежедневник</a> или <a href="#">Dupont</a></p>
+					</div><!--//search-->
+
+					<!--//header-timetable-->
+				</div>
 
 				<!-- TIMETABLE -->
 				<div class="header-timetable">
@@ -64,20 +77,12 @@
 						<p class="wend-time">выходные</p>
 					</div>
 					<p class="online">Онлайн заказы: круглосуточно</p>
-				</div><!--//header-timetable-->
-
-				<!-- SEARCH -->
-				<div class="header-search">
-					<form action="">
-						<input type="search" /><input class="btn-search" type="submit" value="Найти" />
-					</form>
-					<p class="search-example">Например <a href="#">Ежедневник</a> или <a href="#">Dupont</a></p>
-				</div><!--//search-->
+				</div>
 
 			</div><!--//header-info-->
 
 			<!-- CART -->
-			<div class="header-cart">
+			<div class="header-cart header-cart-empty">
 				<div class="order-details">
 					<div class="order-preview">
 						<img src="" alt="" />
@@ -134,7 +139,7 @@
 							</select>
 						</p>
 						<p class="price-select">
-							Цена: от <input type="number" min="0" /> до <input type="number" min="0" /> рублей
+							<big>Цена</big>: от <input type="number" min="0" /> до <input type="number" min="0" /> рублей
 						</p>
 						<div class="price-range-select divider">
 
@@ -221,7 +226,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 			<div class="track-list-container">
 			<div class="track-title"><!--title--></div>
 				<ul class="track-list">
-					<li class="track-item">
+					<li class="track-item track-item-title">
 						<h2>Перьевая ручка <br>PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
 							<img src="" alt="" />
@@ -237,8 +242,8 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 							</div>
 							<div class="availability available">в наличии</div>
 							<div class="features">
-								<label><input type="checkbox" /> Уже в сравнении</label>
-								<label><input type="checkbox" /> Отложить</label>
+								<input type="checkbox" id="compare_idx" /><label for="compare_idx"> Уже в сравнении</label>
+								<input type="checkbox" id="compare_idy" /><label for="compare_idy"> Отложить</label>
 							</div>
 							<div class="detailed-lnk">
 								<a href="#">Подробнее<i class="ico det-lnk"></i></a>
@@ -266,7 +271,7 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 
 			<div class="track-list-container">
 				<ul class="track-list">
-					<li class="track-item">
+					<li class="track-item track-item-title">
 						<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
 							<img src="" alt="" />
@@ -291,7 +296,7 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 							</div>
 						</div>
 					</li><!--track item-->
-					<li class="track-item">
+					<li class="track-item track-item-title">
 						<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
 							<img src="" alt="" />
@@ -316,7 +321,7 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 							</div>
 						</div>
 					</li><!--track item-->
-					<li class="track-item">
+					<li class="track-item track-item-title">
 						<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
 							<img src="" alt="" />
@@ -341,7 +346,7 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 							</div>
 						</div>
 					</li><!--track item-->
-					<li class="track-item">
+					<li class="track-item track-item-title">
 						<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
 							<img src="" alt="" />
@@ -403,10 +408,10 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 				<li>&nbsp;</li>
 				<li class="ar"><a href="#">Оптовикам</a></li>
 				<li><a href="#"><i class="ico ico-mail"></i>Обратная связь</a></li>
-				<li><small>(495)</small> <big>589-69-91</big></li>
+				<li class="footer-phones"><small>(495)</small> <big>589-69-91</big></li>
 				<li class="ar"><a href="#">Контакты</a></li>
 				<li><a href="#"><i class="ico ico-sitemap"></i>Карта сайта</a></li>
-				<li><small>(495)</small> <big>679-69-91</big></li>
+				<li class="footer-phones"><small>(495)</small> <big>679-69-91</big></li>
 			</ul>
 		</div>
 

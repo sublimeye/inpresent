@@ -2,16 +2,17 @@
 *    (c) SublimeYe, 2011
 *    Skype: sublimeye
 --------------------------------*/
-body{font:13px/1.4 Arial,Helvetica,sans-serif}
+body{font:14px/1.4 Calibri, Arial, Helvetica,sans-serif; color: #333}
 .sans{font-family:Arial,Helvetica,sans-serif}
 
-h1,h2,h3,h4,h5,h6{font-family:Georgia,"Times New Roman",Times,serif;font-weight:normal}
+h1,h2,h3,h4,h5,h6{font-family:"Times New Roman",Times,serif;font-weight:normal}
+
 p{line-height:21px}
 
-.content p{line-height:21px;margin-bottom:21px}
+/*.content p{line-height:21px;margin-bottom:21px}*/
 
 strong{font-weight:bold}
-h1{font-size:30px;line-height:30px;margin: 24px 0 20px 0}
+h1{font-size:24px;line-height:30px;margin: 24px 0 20px 0}
 h2{font-size:22px;line-height:28px; margin: 20px 0 15px 0}
 h3{font-size:18px; margin:  20px 0 15px 0}
 
@@ -19,9 +20,300 @@ h3{font-size:18px; margin:  20px 0 15px 0}
 .inset h3 {margin:  20px 0 3px 0; line-height: 1.2em}
 /*   Links
 --------------------------------*/
-a{color:#1348a7;text-decoration:underline}
+a{color:#336699;text-decoration:underline}
 a:visited{/*color: #704eaf;*/}
-a:hover{color:#62730b}
+a:hover{text-decoration:none;}
+
+input {
+	color:#333;
+}
 
 /* GLOBAL
 --------------------------------*/
+
+/*  =header
+__________________________________*/
+.header-nav-list a {
+	color:#824331;
+	text-decoration:none;
+}
+
+.header-nav-list a:hover {
+	color:#a53618;
+	text-decoration:none;
+}
+
+.header-nav-list .active, .header-nav-list a.active:hover {
+	color:#ce3106;
+}
+
+.header-phones {
+	font-size:18px;
+	color:#194374;
+	text-shadow:0 1px 1px #fff;
+}
+
+.header-phones big {
+	font-size:28px;
+}
+
+.header-search input {
+	font-size:15px;
+}
+
+/*  =search
+__________________________________*/
+.search-example {
+	font-size:12px;
+	color:#a4a4a4;
+}
+
+.search-example a {
+	color:#5176a9;
+	text-decoration:none;
+	border-bottom:1px dashed #5176a9;
+}
+
+/*  =timetable
+__________________________________*/
+.header-timetable {
+	font-size:12px;
+}
+
+.header-timetable .title {
+	color:#939393;
+}
+
+.header-timetable .days {
+	color:#717171;
+}
+
+.header-timetable .work-time {
+	color:#194374;
+	font-size:18px;
+}
+
+.work-time sup {
+	vertical-align:super;
+	font-size:8px;
+}
+
+.header-timetable .wend-time {
+	color:#b47373;
+}
+
+.header-timetable .online {
+	color:#625656;
+}
+
+/*  =cart
+__________________________________*/
+.header-cart {
+	font-size:12px;
+}
+
+.order-title, .order-amount, .order-price {
+	color:#ce3106;
+}
+
+.order-title {
+	text-transform:uppercase;
+}
+
+.order-details .spacer {
+	color:#7b5044;
+}
+
+.order-notes a {
+	color:#9f9d97;
+	font-size:12px;
+}
+
+.categories-list a {
+	color:#fff;
+}
+
+/*  =presents-wizard
+__________________________________*/
+.price-select {
+	font-size:12px;
+}
+
+.price-select big {
+	font-size:14px;
+}
+
+.manu-list li {
+
+}
+
+.sub-category-list a {
+	font-size:18px;
+	color:#b61c10;
+}
+
+.sub-category-list a:hover {
+	color:#f1541a;
+}
+
+.presents-wizard .addon-content a {
+	color:#a44730;
+}
+
+.aside-news {
+	font-size:12px;
+}
+
+.aside-news .date {
+	color:#bd9e82;
+	font-size:14px;
+}
+
+/*  =PRODUCT TRACK
+__________________________________*/
+.track-item-title {
+	color:#512418;
+	font-size:16px;
+}
+
+.track-item .price {
+	color:#7a7a67;
+	font-size:16px;
+}
+
+.track-item .price b {
+	font-size:20px;
+	font-weight:bold;
+}
+
+.track-item .price.sale b {
+	color:#e62f2f;
+}
+
+.track-item .old-price {
+	font-size:16px;
+}
+
+.track-item .order,
+.track-item .features,
+.additional-columns,
+.page-header-content,
+.footer-phones,
+.footer-categories-list,
+.order-title,
+.header-cart {
+	font-family:"Arial Narrow", Arial, Helvetica, sans-serif;;
+}
+
+.track-item .item-qtty {
+	color:#535456;
+}
+
+.track-item .order a {
+	color:#535456;
+}
+
+.track-item .availability {
+	font-size:11px;
+	text-transform:uppercase;
+}
+
+.availability.available {
+	color:#62ac3d;
+}
+
+.availability.order {
+	color:#f54f4f
+}
+
+.track-item .features {
+	font-size:12px;
+	color:#6e6e6e;
+}
+
+.track-item input[type="checkbox"]:checked + label {
+	color:#9c5959;
+	font-size:14px;
+}
+
+.track-item .details-lnk a {
+	font-size:12px;
+	color:#cb340c;
+}
+
+.track-item .fig .caption {
+	font-size:12px;
+	color:#7d7d7d;
+}
+
+.track-item .fig .caption em {
+	color:#b25353;
+	font-weight:bold;
+}
+
+/*  =additional columns
+__________________________________*/
+.additional-columns h3 {
+	color:#532013;
+	font-size:18px;
+}
+
+.additional-columns {
+	color:#686868;
+	font-size:12px;
+}
+
+/*  =footer
+__________________________________*/
+.footer-nav, .footer-nav a {
+	color:#8b5d51;
+	font-size:12px;
+}
+
+.footer-nav a {
+	text-decoration:underline;
+}
+
+.footer-nav a:hover {
+	text-decoration:none;
+}
+
+.footer-phones small {
+	font-size:12px;
+}
+
+.footer-phones big {
+	font-size:18px;
+}
+
+.footer-categories-list a {
+	color:#b49e8b;
+	text-decoration:none;
+}
+
+.footer-categories-list a:hover {
+	text-decoration:underline;
+}
+
+/*  =sub-footer
+__________________________________*/
+.sub-footer {
+	font-size:12px;
+}
+
+.sub-footer .copy {
+	color:#502317;
+}
+
+.sub-footer .privacy {
+	color:#966659;
+}
+
+.sub-footer .dev, .sub-footer .dev a {
+	color:#6e3b2d;
+	text-decoration:none;
+}
+
+.sub-footer .dev a {
+	text-decoration:underline;
+}
