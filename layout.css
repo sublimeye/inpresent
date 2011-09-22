@@ -294,11 +294,34 @@ body {
 	width:100%;
 }
 
+.categories-list {
+	text-decoration: none;
+}
+
 .page-header-categories td {
-	background:#502317;
 	height:34px;
+	padding: 0 5px;
 	line-height:middle;
+	vertical-align: middle;
 	text-align:center;
+	background:#502317;
+}
+
+.page-header-categories span {
+	display: inline-block;
+	text-align: left;
+}
+
+.categories-list .category-everything {
+	background: #fff;
+}
+
+.category-everything a {
+	color: #AB3B09;
+}
+
+.categories-list .category-special {
+	background: #502317 url("img/categories_list_special.png") no-repeat right center;
 }
 
 .page-floating-cart {
