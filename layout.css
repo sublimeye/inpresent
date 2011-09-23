@@ -896,7 +896,7 @@ __________________________________*/
 /*	=features
 __________________________________*/
 .features {
-	margin-top:23px;
+	margin-top:26px;
 }
 .features input {
 	margin-right:10px;
@@ -909,6 +909,20 @@ __________________________________*/
 	position:absolute;
 	bottom:0;
 	right:15px;
+}
+
+/*	=banner
+__________________________________*/
+.promo-container {
+	text-align:center;
+	margin:20px -40px;
+	border:1px solid #EDEDED;
+	border-width:1px 0;
+	background:#FEFEFE;
+}
+
+.promo-container img {
+	margin:10px 0;
 }
 
 /* additional columns
