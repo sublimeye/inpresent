@@ -8,6 +8,7 @@
 	<link href='typography.css' rel="stylesheet" type="text/css" />
 
 	<!--[if IE 7]><link rel="stylesheet" type="text/css" href='ie7.css' /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href='ie78.css' /><![endif]-->
 	<link rel="Shortcut Icon" type="image/x-icon" href="" />
 
 </head>
@@ -101,16 +102,26 @@
 		<div class="page-header-categories">
 			<table class="categories-list" cellspacing="0">
 				<colgroup>
-					<col span="9" width="9%" />
+					<col width="7%" />
+					<col width="9%" />
+					<col width="9%" />
+					<col width="6.6%" />
+					<col width="10.5%" />
+					<col />
+					<col width="11%" />
+					<col width="11%" />
+					<col width="8.1%" />
+					<col width="8.8%" />
+					<col width="6.7%" />
 				</colgroup>
 				<tr>
 					<td><a href="#"><span>Ручки</span></a></td>
-					<td><a href="#"><span>Бизнес сувениры</span></a></td>
-					<td><a href="#"><span>Изделия из кожи</span></a></td>
+					<td><a href="#"><span>Бизнес <br/> сувениры</span></a></td>
+					<td><a href="#"><span>Изделия <br/>из кожи</span></a></td>
 					<td><a href="#"><span>Часы</span></a></td>
-					<td><a href="#"><span>Аксессуары для курения</span></a></td>
-					<td><a href="#"><span>Игры, игровые наборы</span></a></td>
-					<td><a href="#"><span>Аксессуары для алкоголя</span></a></td>
+					<td><a href="#"><span>Аксессуары <br/> для курения</span></a></td>
+					<td><a href="#"><span>Игры,<br/> игровые наборы</span></a></td>
+					<td><a href="#"><span>Аксессуары <br/>для алкоголя</span></a></td>
 					<td><a href="#"><span>Ежедневники, планинги</span></a></td>
 					<td><a href="#"><span>Брелоки, шкатулки</span></a></td>
 					<td class="category-special"><a href="#"><span>1 сентября</span></a></td>
@@ -160,7 +171,7 @@
 							</ul>
 						</div>
 
-						<div class="sumbit-wizard">
+						<div class="submit-wizard">
 							<input class="btn-def" type="submit" value="Подобрать" />
 						</div>
 					</form>
@@ -191,7 +202,7 @@
 		</div><!--//presents-wizard-->
 
 		<!-- INTRO SECTION -->
-		<div class="intro-section clearfix g-unshift">
+		<div class="intro-section clearfix">
 
 			<div class="aside-news">
 				<div class="heading">
@@ -211,9 +222,9 @@
 
 			<h1>Заголовок h1</h1>
 			<p>The Ultimate CSS Gradient Editor was created by Alex Sirota (iosart). If you like this tool, check out ColorZilla for more advanced tools such as eyedroppers, color pickers, palette editors and website analyzers.
+</p><p>As you might know, HTML5 introduced many exciting features for Web developers. One of the features is the ability to specify gradients using pure CSS3, without having to create any images and use them as repeating backgrounds for gradient effects.The Ultimate CSS Gradient Editor was created by Alex Sirota (iosart). If you like this tool, check out ColorZilla for more advanced tools such as eyedroppers, color pickers, palette editors and website analyzers.
 As you might know, HTML5 introduced many exciting features for Web developers. One of the features is the ability to specify gradients using pure CSS3, without having to create any images and use them as repeating backgrounds for gradient effects.The Ultimate CSS Gradient Editor was created by Alex Sirota (iosart). If you like this tool, check out ColorZilla for more advanced tools such as eyedroppers, color pickers, palette editors and website analyzers.
-As you might know, HTML5 introduced many exciting features for Web developers. One of the features is the ability to specify gradients using pure CSS3, without having to create any images and use them as repeating backgrounds for gradient effects.The Ultimate CSS Gradient Editor was created by Alex Sirota (iosart). If you like this tool, check out ColorZilla for more advanced tools such as eyedroppers, color pickers, palette editors and website analyzers.
-As you might know, HTML5 introduced many exciting features for Web developers. One of the features is the ability to specify gradients using pure CSS3, without having to create any images and use them as repeating backgrounds for gradient effects.</p>
+</p>
 		</div><!--//intro section-->
 
 		<div class="product-track presents-track clearfix g-unshift">
@@ -229,10 +240,10 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 			<div class="track-list-container">
 			<div class="track-title"><!--title--></div>
 				<ul class="track-list">
-					<li class="track-item track-item-title">
-						<h2>Перьевая ручка <br>PARKER Vector Premium F181, Shiny SS</h2>
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка <br>PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
-							<img src="" alt="" />
+							<img src="img/temp_track_product_image.png" alt="" />
 							<span class="caption">Артикул: <em>S02939372</em></span>
 						</div>
 						<div class="actions">
@@ -241,11 +252,11 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 							</div>
 							<div class="order">
 								<input type="text" class="item-qtty" />
-								<a href="#"><i class="ico ico-minicart"></i>Купить</a>
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability available">в наличии</div>
 							<div class="features">
-								<input type="checkbox" id="compare_idx" /><label for="compare_idx"> Уже в сравнении</label>
+								<input type="checkbox" id="compare_idx" /><label for="compare_idx"> Уже в сравнении</label><br/>
 								<input type="checkbox" id="compare_idy" /><label for="compare_idy"> Отложить</label>
 							</div>
 							<div class="detailed-lnk">
@@ -258,8 +269,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 			</div>
 		</div>
 
-		<p>The 'Preview' panel allows previewing the current gradient as a vertical or horizontal one, and also allows quickly previewing how the Internet Explorer fallback gradient will look in IE.
-Finally, the 'CSS' panel always has the CSS for the current gradient for easy copying and pasting into your stylesheet. You can also use this panel to import an existing gradient CSS into the tool.</p>
+		<p>The 'Preview' panel allows previewing the current gradient as a vertical or horizontal one, and also allows quickly previewing how the Internet Explorer fallback gradient will look in IE. Finally, the 'CSS' panel always has the CSS for the current gradient for easy copying and pasting into your stylesheet. You can also use this panel to import an existing gradient CSS into the tool.</p>
 
 		<div class="product-track sale-track clearfix g-unshift">
 			<div class="track-title"><!--title--></div>
@@ -287,7 +297,7 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 							</div>
 							<div class="order">
 								<input type="text" class="item-qtty" />
-								<a href="#"><i class="ico ico-minicart"></i>Купить</a>
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability toorder">под заказ</div>
 							<div class="features">
@@ -312,7 +322,7 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 							</div>
 							<div class="order">
 								<input type="text" class="item-qtty" />
-								<a href="#"><i class="ico ico-minicart"></i>Купить</a>
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability toorder">под заказ</div>
 							<div class="features">
@@ -337,7 +347,7 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 							</div>
 							<div class="order">
 								<input type="text" class="item-qtty" />
-								<a href="#"><i class="ico ico-minicart"></i>Купить</a>
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability toorder">под заказ</div>
 							<div class="features">
@@ -362,7 +372,7 @@ Finally, the 'CSS' panel always has the CSS for the current gradient for easy co
 							</div>
 							<div class="order">
 								<input type="text" class="item-qtty" />
-								<a href="#"><i class="ico ico-minicart"></i>Купить</a>
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability toorder">под заказ</div>
 							<div class="features">
