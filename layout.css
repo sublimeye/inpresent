@@ -28,6 +28,8 @@ html[xmlns] .clearfix{display:block}
 /*   1. Base layout
 --------------------------------*/
 body {
+	background: #F4ECD5;
+/*
 	background:rgb(236, 229, 197);
 	background:-moz-linear-gradient(top, rgba(236, 229, 197, 1) 0%, rgba(241, 236, 210, 1) 100%);
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(236, 229, 197, 1)), color-stop(100%, rgba(241, 236, 210, 1)));
@@ -36,6 +38,7 @@ body {
 	background:-ms-linear-gradient(top, rgba(236, 229, 197, 1) 0%, rgba(241, 236, 210, 1) 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ece5c5', endColorstr = '#f1ecd2', GradientType = 0);
 	background:linear-gradient(top, rgba(236, 229, 197, 1) 0%, rgba(241, 236, 210, 1) 100%);
+*/
 }
 
 .page {
@@ -52,8 +55,6 @@ body {
 
 .page-body {
 	padding:20px 40px 0 40px;
-	/*border:1px solid #EEE2C2;*/
-	/*border-width:0 3px 0 3px;*/
 	-moz-border-radius:3px;
 	border-radius:3px;
 	background:#FFFFFF;
@@ -151,6 +152,14 @@ body {
 
 .ico-lnk-sitemap {
 	background-position:-32px 3px
+}
+
+.ico-mail {
+	background-position:-48px 7px
+}
+
+.ico-sitemap {
+	background-position:-64px 5px
 }
 
 .det-lnk {
@@ -256,6 +265,10 @@ body {
 	float:left;
 }
 
+.page-header p {
+	margin-bottom: 0;
+}
+
 .header-timetable .time {
 	float:left;
 }
@@ -312,7 +325,7 @@ body {
 	line-height:1;
 	vertical-align: middle;
 	text-align:center;
-	background:#502317;
+	background:#502317 url("img/categories_list_separator.png") repeat-y left 0;
 }
 
 .page-header-categories span {
@@ -361,12 +374,27 @@ body {
 	background: #502317 url("img/categories_list_special.png") no-repeat right center;
 }
 
+.page-floating-cart p {
+	margin-bottom: 0;
+}
+
 .page-floating-cart {
 	position:fixed;
-	right:0;
-	outline:1px solid red;
 	top:200px;
-	background:#fff;
+	right:0;
+	padding: 3px 3px 3px 3px;
+	border: 1px solid #E18C6D;
+	border-bottom: 0;
+	border-right: 0;
+}
+
+.floating-cart-figure {
+	position: absolute;
+	top: 25px;
+	left: -6px;
+	width: 41px;
+	height: 50px;
+	background: url("img/i_floating_cart_active.png");
 }
 
 @media all and (max-width: 1200px) {
@@ -377,6 +405,9 @@ body {
 
 /* presents wizard
 --------------------------------*/
+.presents-wizard p {
+	margin-bottom: 0;
+}
 .presents-wizard {
 	position:relative;
 	border:1px solid #F4F0E7;
@@ -604,6 +635,10 @@ __________________________________*/
 
 .intro-section h1 {
 	text-align:center;
+}
+
+.aside-news p {
+	margin-bottom: 0;
 }
 
 .aside-news {
@@ -867,6 +902,7 @@ __________________________________*/
 .track-item .price p {
 	vertical-align:middle;
 	line-height:26px;
+	margin-bottom: 0;
 }
 
 /*	=order
@@ -937,21 +973,46 @@ __________________________________*/
 	margin:0 20px;
 }
 
+.additional-columns h3 {
+	margin: 0 0 10px 0;
+}
+
 /* footer
 --------------------------------*/
 .page-footer {
-	position:relative;
-	/*background: #552519;*/
+	position: relative;
+}
+
+.page-footer:before {
+	position: absolute;
+	content: '';
+	left: 155px;
+	top: 58px;
+	width: 235px;
+	z-index: 50;
+	border-bottom: 1px solid #6E3B2E;
+	border-top: 1px solid #3E170C;
 }
 
 .page-footer-content {
+	overflow: hidden;
+	min-height: 173px;
+	background: #552519;
+	position: relative;
+}
+
+.page-footer-contacts {
+	margin-top: 80px;
 	float:left;
 }
 
 .footer-logo {
 	position:absolute;
-	top:0;
-	left:0;
+	top:16px;
+	left:20px;
+	width: 108px;
+	height: 46px;
+	background: url("img/footer_logo.png");
 }
 
 .footer-nav {
@@ -961,25 +1022,75 @@ __________________________________*/
 .footer-nav li {
 	float:left;
 	width:33%;
+	min-height: 22px;
+	line-height: 22px;
 	list-style:none;
+	vertical-align: bottom;
+}
+
+.footer-nav .ar {
+	text-align: right;
+}
+
+.footer-nav .ar a {
+	margin-right: 30px;
+}
+
+.footer-phones big {
+	line-height: 20px;
+}
+
+.page-footer-categories {
+	float: left;
+	width: 52%;
+	margin-left: 2%;
+	text-align: center;
 }
 
 .footer-categories-list {
-	float:left;
-	width:51%;
-	margin-left:30px;
+	display: inline-block;
+	text-align: left;
+	margin-top: 18px;
 }
 
-.footer-categories-list li {
-	float:left;
-	width:33%;
-	list-style:none;
-	outline:1px solid red;
+.footer-categories-list td {
+	padding-right: 40px;
+}
+
+.footer-categories-list td a {
+	position: relative;
+	display: block;
+	padding: 16px 0 6px 0;
+	border-bottom: 1px solid #6E3B2E;
+	background: url("");
+}
+
+.footer-categories-list td a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	border-bottom: 1px solid #3E170C;
+}
+
+.footer-promo {
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .sub-footer {
 	position:relative;
-	clear:both;
+	clear: both;
+	float: left;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+}
+
+.sub-footer .counters {
+	padding-top: 3px;
 }
 
 .sub-footer div {
@@ -988,11 +1099,11 @@ __________________________________*/
 
 .sub-footer .privacy {
 	width:50%;
-	outline:1px solid red;
+	text-align: center;
 }
 
 .sub-footer .dev {
 	position:absolute;
 	right:0;
-	top:0;
+	top:0px;
 }

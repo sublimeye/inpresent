@@ -58,7 +58,7 @@
 					<!-- SEARCH -->
 					<div class="header-search">
 						<form action="">
-							<input type="text" placeholder="Какой подарок желаете найти" /><button class="btn-search"><i class="ico ico-btn-search"></i>Найти</button>
+							<input type="text" tabindex="1" placeholder="Какой подарок желаете найти" /><button tabindex="2" class="btn-search"><i class="ico ico-btn-search"></i>Найти</button>
 						</form>
 						<p class="search-example">Например <a href="#">Ежедневник</a> или <a href="#">Dupont</a></p>
 					</div><!--//search-->
@@ -122,8 +122,8 @@
 					<td><a href="#"><span>Аксессуары <br/> для курения</span></a></td>
 					<td><a href="#"><span>Игры,<br/> игровые наборы</span></a></td>
 					<td><a href="#"><span>Аксессуары <br/>для алкоголя</span></a></td>
-					<td><a href="#"><span>Ежедневники, планинги</span></a></td>
-					<td><a href="#"><span>Брелоки, шкатулки</span></a></td>
+					<td><a href="#"><span>Ежедневники,<br/> планинги</span></a></td>
+					<td><a href="#"><span>Брелоки,<br/> шкатулки</span></a></td>
 					<td class="category-special"><a href="#"><span>1 сентября</span></a></td>
 					<td class="category-everything"><a href="#"><span>Все сразу<br>от А до Я</span></a></td>
 				</tr>
@@ -134,9 +134,7 @@
 	<!-- FLOATING CART -->
 	<div class="page-floating-cart">
 		<p class="amount">32 шт.</p>
-		<div class="floating-cart-preview">
-			<img src="" alt="" />
-		</div>
+		<div class="floating-cart-figure"></div>
 	</div>
 	<!-- Page BODY -->
 	<div class="page-body">
@@ -415,46 +413,52 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 
 	<div class="page-footer clearfix">
 		<div class="page-footer-content">
-			<div class="footer-logo"></div>
-			<ul class="footer-nav">
-				<li class="ar"><a href="#">О компании</a></li>
-				<li>&nbsp;</li>
-				<li>&nbsp;</li>
-				<li class="ar"><a href="#">Оптовикам</a></li>
-				<li><a href="#"><i class="ico ico-mail"></i>Обратная связь</a></li>
-				<li class="footer-phones"><small>(495)</small> <big>589-69-91</big></li>
-				<li class="ar"><a href="#">Контакты</a></li>
-				<li><a href="#"><i class="ico ico-sitemap"></i>Карта сайта</a></li>
-				<li class="footer-phones"><small>(495)</small> <big>679-69-91</big></li>
-			</ul>
-		</div>
+			<div class="page-footer-contacts">
+				<div class="footer-logo"><!--logo--></div>
+				<ul class="footer-nav">
+					<li class="ar"><a href="#">О компании</a></li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li class="ar"><a href="#">Оптовикам</a></li>
+					<li><a href="#"><i class="ico ico-mail"></i>Обратная связь</a></li>
+					<li class="footer-phones"><small>(495)</small> <big>589-69-91</big></li>
+					<li class="ar"><a href="#">Контакты</a></li>
+					<li><a href="#"><i class="ico ico-sitemap"></i>Карта сайта</a></li>
+					<li class="footer-phones"><small>(495)</small> <big>679-69-91</big></li>
+				</ul>
+			</div>
 
-		<div class="page-footer-categories">
-			<ul class="footer-categories-list clearfix">
-				<li><a href="#">Ручки</a></li>
-				<li><a href="#">Часы</a></li>
-				<li><a href="#">Аксессуары для алкоголя</a></li>
-				<li><a href="#">Бизнес сувениры</a></li>
-				<li><a href="#">Аксессуары для курения</a></li>
-				<li><a href="#">Ежедневники, планинги</a></li>
-				<li><a href="#">Изделия из кожи</a></li>
-				<li><a href="#">Игры, игровые наборы</a></li>
-				<li><a href="#">Брелоки, шкатулки</a></li>
-			</ul><!--//footer-categories-list-->
-		</div><!--//page-footer-categories-->
+			<div class="page-footer-categories">
+				<table class="footer-categories-list">
+					<tr>
+						<td><a href="#">Ручки</a></td>
+						<td><a href="#">Часы</a></td>
+						<td><a href="#">Аксессуары для алкоголя</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Бизнес сувениры</a></td>
+						<td><a href="#">Аксессуары для курения</a></td>
+						<td><a href="#">Ежедневники, планинги</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Изделия из кожи</a></td>
+						<td><a href="#">Игры, игровые наборы</a></td>
+						<td><a href="#">Брелоки, шкатулки</a></td>
+					</tr>
+				</table>
+			</div><!--//page-footer-categories-->
 
-		<div class="footer-promo">
-			<img src="" alt="" />
+			<div class="footer-promo">
+				<img src="img/footer_promo.jpg" width="195" height="173" alt="" />
+			</div>
 		</div>
 		<div class="sub-footer clearfix">
 			<div class="copy">&copy; &laquo;Полезный магазин &laquo;InPresent&raquo;&raquo;, 2006 &ndash; 2011</div>
 			<div class="privacy">Вся информация на сайте носит справочный характер и не является публчной офертой</div>
-			<div class="counters"><img src="" alt="" /></div>
+			<div class="counters"><img src="img/temp_counter.png" height="31" width="88" alt="" /></div>
 			<div class="dev">Designed by <a href="#">PAIVE Media Group</a></div>
 		</div>
 	</div><!-- //page-footer -->
-
 </div>
-
 </body>
 </html>

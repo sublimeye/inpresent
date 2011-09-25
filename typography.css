@@ -7,7 +7,9 @@ body{font:14px/1.4 Calibri, Arial, Helvetica,sans-serif; color: #333}
 
 h1,h2,h3,h4,h5,h6{font-family:"Times New Roman",Times,serif;font-weight:normal}
 
-p{line-height:21px}
+p {
+	margin-bottom: 1em;
+}
 
 /*.content p{line-height:21px;margin-bottom:21px}*/
 
@@ -138,6 +140,11 @@ __________________________________*/
 	color:#fff;
 }
 
+.page-floating-cart .amount {
+	color: #ce3106;
+	font-size: 14px;
+}
+
 /*  =presents-wizard
 __________________________________*/
 .price-select {
@@ -248,7 +255,8 @@ __________________________________*/
 .footer-phones,
 .footer-categories-list,
 .order-title,
-.header-cart {
+.header-cart,
+.page-floating-cart .amount {
 	font-family:"Arial Narrow", Arial, Helvetica, sans-serif;;
 }
 
