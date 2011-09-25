@@ -15,7 +15,6 @@
 <body>
 
 <div class="page">
-
 	<!-- Page HEADER -->
 	<div class="page-header">
 		<!-- header navigation -->
@@ -83,14 +82,30 @@
 			</div><!--//header-info-->
 
 			<!-- CART -->
-			<div class="header-cart header-cart-empty">
+
+			<!-- NORMAL CART -->
+<!--
+			<div class="header-cart">
 				<div class="order-details">
 					<div class="order-preview">
-						<img src="" alt="" />
 					</div>
 					<p class="order-title">Ваш заказ:</p>
 					<p class="order-amount"><span class="spacer">состоит из</span> 23 товаров</p>
 					<p class="order-price"><span class="spacer">на сумму</span> 500 000 рублей</p>
+				</div>
+				<div class="order-notes">
+					<a href="#">Сроки доставки</a> &nbsp;&nbsp;&nbsp; <a href="#">Вопросы о заказе и доставке</a>
+				</div>
+			</div>
+-->
+			<!--//header cart-->
+
+			<!-- CART -->
+			<div class="header-cart header-cart-empty">
+				<div class="order-details">
+					<div class="order-preview">
+					</div>
+					<p class="order-title">Ваш заказ<br/> еще не сформирован</p>
 				</div>
 				<div class="order-notes">
 					<a href="#">Сроки доставки</a> &nbsp;&nbsp;&nbsp; <a href="#">Вопросы о заказе и доставке</a>
@@ -115,17 +130,75 @@
 					<col width="6.7%" />
 				</colgroup>
 				<tr>
-					<td><a href="#"><span>Ручки</span></a></td>
-					<td><a href="#"><span>Бизнес <br/> сувениры</span></a></td>
-					<td><a href="#"><span>Изделия <br/>из кожи</span></a></td>
-					<td><a href="#"><span>Часы</span></a></td>
-					<td><a href="#"><span>Аксессуары <br/> для курения</span></a></td>
-					<td><a href="#"><span>Игры,<br/> игровые наборы</span></a></td>
-					<td><a href="#"><span>Аксессуары <br/>для алкоголя</span></a></td>
-					<td><a href="#"><span>Ежедневники,<br/> планинги</span></a></td>
-					<td><a href="#"><span>Брелоки,<br/> шкатулки</span></a></td>
+					<td class="cl-item"><a href="#"><span>Ручки</span></a></td>
+					<td class="cl-item"><a href="#"><span>Бизнес <br/> сувениры</span></a></td>
+					<td class="cl-item"><a href="#"><span>Изделия <br/>из кожи</span></a></td>
+					<td class="cl-item"><a href="#"><span>Часы</span></a></td>
+					<td class="cl-item"><a href="#"><span>Аксессуары <br/> для курения</span></a>
+						<div class="submenu">
+							<table class="submenu-wrapper">
+								<tr>
+									<!-- Левая колонка -->
+									<td>
+										<ul class="categories-submenu">
+											<li class="submenu-title">Зажигалки
+												<ul class="submenu-list">
+													<li><a href="#">Dupont</a></li>
+													<li><a href="#">Deipolo</a></li>
+													<li><a href="#">Dildo</a></li>
+													<li><a href="#">Dalvery</a></li>
+													<li><a href="#">Dickhead & Rezbitto</a></li>
+												</ul>
+											</li>
+										</ul>
+
+										<ul class="categories-submenu cleared">
+											<li class="submenu-title">Пепельницы
+												<ul class="submenu-list">
+													<li><a href="#">Dalvery</a></li>
+													<li><a href="#">Dickhead & Rezbitto</a></li>
+												</ul>
+											</li>
+										</ul>
+										</td>
+									<!-- Правая колонка -->
+										<td>
+										<ul class="categories-submenu">
+											<li class="submenu-title">Хьюмидоры
+												<ul class="submenu-list">
+													<li><a href="#">Dupont</a></li>
+													<li><a href="#">Deipolo <i class="star">*</i></a></li>
+													<li><a href="#">Dickhead & Rezbitto</a></li>
+												</ul>
+											</li>
+										</ul>
+
+										<ul class="categories-submenu">
+											<li class="submenu-title">Гильотины
+												<ul class="submenu-list">
+													<li><a href="#">Dupont</a></li>
+													<li><a href="#">Deipolo</a></li>
+													<li><a href="#">Dupont</a></li>
+													<li><a href="#">Dalvery</a></li>
+													<li><a href="#">Dalvery</a></li>
+													<li><a href="#">Dickhead & Rezbitto</a></li>
+												</ul>
+											</li>
+										</ul>
+
+									</td>
+								</tr>
+							</table>
+							<a class="submenu-addon-link" href="#">Как выбрать подарок курильщику?</a>
+
+						</div>
+					</td>
+					<td class="cl-item"><a href="#"><span>Игры,<br/> игровые наборы</span></a></td>
+					<td class="cl-item"><a href="#"><span>Аксессуары <br/>для алкоголя</span></a></td>
+					<td class="cl-item"><a href="#"><span>Ежедневники,<br/> планинги</span></a></td>
+					<td class="cl-item"><a href="#"><span>Брелоки,<br/> шкатулки</span></a></td>
 					<td class="category-special"><a href="#"><span>1 сентября</span></a></td>
-					<td class="category-everything"><a href="#"><span>Все сразу<br>от А до Я</span></a></td>
+					<td class="category-everything"><a href="#"><span>Все сразу<br/>от А до Я</span></a></td>
 				</tr>
 			</table>
 		</div>
@@ -195,7 +268,36 @@
 
 			<!-- MIDDLE CONTENT / Accordion -->
 			<div class="section accordion-container">
-				
+				<ul class="accordion">
+					<li style="z-index: 1; left: 0"><img src="img/accordion_1.jpg" width="150" height="420" alt="" />
+
+						<div class="content">
+							<div class="title"></div>
+							<div class="text"></div>
+						</div>
+					</li>
+					<li style="z-index: 2; left: 25%"><img src="img/accordion_2.jpg" width="150" height="420" alt="" />
+
+						<div class="content">
+							<div class="title"></div>
+							<div class="text"></div>
+						</div>
+					</li>
+					<li style="z-index: 3; left: 50%"><img src="img/accordion_3.jpg" width="385" height="420" alt="" />
+
+						<div class="content">
+							<div class="title">Истинным коллекционерам</div>
+							<div class="text">Новые поступления наручных часов известных брэндов. Кто ценит время - поймет.</div>
+						</div>
+					</li>
+					<li style="z-index: 4; left: 75%"><img src="img/accordion_4.jpg" width="200" height="420" alt="" />
+
+						<div class="content">
+							<div class="title"></div>
+							<div class="text"></div>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div><!--//presents-wizard-->
 
@@ -239,7 +341,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 			<div class="track-title"><!--title--></div>
 				<ul class="track-list">
 					<li class="track-item">
-						<h2 class="track-item-title">Перьевая ручка <br>PARKER Vector Premium F181, Shiny SS</h2>
+						<h2 class="track-item-title">Перьевая ручка <br/>PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
 							<img src="img/temp_track_product_image.png" alt="" />
 							<span class="caption">Артикул: <em>S02939372</em></span>
@@ -249,7 +351,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 								<p>Цена: <b>1 110</b> Р.</p>
 							</div>
 							<div class="order">
-								<input type="text" class="item-qtty" />
+								<input type="text" value="1" class="item-qtty" />
 								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability available">в наличии</div>
@@ -262,6 +364,132 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 							</div>
 						</div>
 					</li><!--track item-->
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+						<div class="fig">
+							<img src="" alt="" />
+							<span class="caption">Артикул: <em>S02939372</em></span>
+						</div>
+						<div class="actions">
+							<div class="price sale">
+								<p class="old-price"><i class="ico ico-sale"></i><del>1 300 Р.</del></p>
+								<p>Цена: <b>1 110</b> Р.</p>
+							</div>
+							<div class="order">
+								<input type="text" value="1" class="item-qtty" />
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
+							</div>
+							<div class="availability toorder">под заказ</div>
+							<div class="features">
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
+								<label><input type="checkbox" /> Отложить</label>
+							</div>
+							<div class="detailed-lnk">
+								<a href="#">Подробнее<i class="ico det-lnk"></i></a>
+							</div>
+						</div>
+					</li><!--track item-->
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+						<div class="fig">
+							<img src="" alt="" />
+							<span class="caption">Артикул: <em>S02939372</em></span>
+						</div>
+						<div class="actions">
+							<div class="price sale">
+								<p class="old-price"><i class="ico ico-sale"></i><del>1 300 Р.</del></p>
+								<p>Цена: <b>1 110</b> Р.</p>
+							</div>
+							<div class="order">
+								<input type="text" value="1" class="item-qtty" />
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
+							</div>
+							<div class="availability toorder">под заказ</div>
+							<div class="features">
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
+								<label><input type="checkbox" /> Отложить</label>
+							</div>
+							<div class="detailed-lnk">
+								<a href="#">Подробнее<i class="ico det-lnk"></i></a>
+							</div>
+						</div>
+					</li><!--track item-->
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+						<div class="fig">
+							<img src="" alt="" />
+							<span class="caption">Артикул: <em>S02939372</em></span>
+						</div>
+						<div class="actions">
+							<div class="price sale">
+								<p class="old-price"><i class="ico ico-sale"></i><del>1 300 Р.</del></p>
+								<p>Цена: <b>1 110</b> Р.</p>
+							</div>
+							<div class="order">
+								<input type="text" value="1" class="item-qtty" />
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
+							</div>
+							<div class="availability toorder">под заказ</div>
+							<div class="features">
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
+								<label><input type="checkbox" /> Отложить</label>
+							</div>
+							<div class="detailed-lnk">
+								<a href="#">Подробнее<i class="ico det-lnk"></i></a>
+							</div>
+						</div>
+					</li><!--track item-->
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+						<div class="fig">
+							<img src="" alt="" />
+							<span class="caption">Артикул: <em>S02939372</em></span>
+						</div>
+						<div class="actions">
+							<div class="price sale">
+								<p class="old-price"><i class="ico ico-sale"></i><del>1 300 Р.</del></p>
+								<p>Цена: <b>1 110</b> Р.</p>
+							</div>
+							<div class="order">
+								<input type="text" value="1" class="item-qtty" />
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
+							</div>
+							<div class="availability toorder">под заказ</div>
+							<div class="features">
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
+								<label><input type="checkbox" /> Отложить</label>
+							</div>
+							<div class="detailed-lnk">
+								<a href="#">Подробнее<i class="ico det-lnk"></i></a>
+							</div>
+						</div>
+					</li><!--track item-->
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+						<div class="fig">
+							<img src="" alt="" />
+							<span class="caption">Артикул: <em>S02939372</em></span>
+						</div>
+						<div class="actions">
+							<div class="price sale">
+								<p class="old-price"><i class="ico ico-sale"></i><del>1 300 Р.</del></p>
+								<p>Цена: <b>1 110</b> Р.</p>
+							</div>
+							<div class="order">
+								<input type="text" value="1" class="item-qtty" />
+								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
+							</div>
+							<div class="availability toorder">под заказ</div>
+							<div class="features">
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
+								<label><input type="checkbox" /> Отложить</label>
+							</div>
+							<div class="detailed-lnk">
+								<a href="#">Подробнее<i class="ico det-lnk"></i></a>
+							</div>
+						</div>
+					</li><!--track item-->
+
 					<!-- ================================= -->
 				</ul>
 			</div>
@@ -282,10 +510,10 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 
 			<div class="track-list-container">
 				<ul class="track-list">
-					<li class="track-item track-item-title">
-						<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
-							<img src="" alt="" />
+							<img src="img/temp_track_product_image2.png" alt="" />
 							<span class="caption">Артикул: <em>S02939372</em></span>
 						</div>
 						<div class="actions">
@@ -294,12 +522,12 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 								<p>Цена: <b>1 110</b> Р.</p>
 							</div>
 							<div class="order">
-								<input type="text" class="item-qtty" />
+								<input type="text" value="1" class="item-qtty" />
 								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability toorder">под заказ</div>
 							<div class="features">
-								<label><input type="checkbox" /> Уже в сравнении</label>
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
 								<label><input type="checkbox" /> Отложить</label>
 							</div>
 							<div class="detailed-lnk">
@@ -307,10 +535,10 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 							</div>
 						</div>
 					</li><!--track item-->
-					<li class="track-item track-item-title">
-						<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
-							<img src="" alt="" />
+							<img src="img/temp_track_product_image2.png" alt="" />
 							<span class="caption">Артикул: <em>S02939372</em></span>
 						</div>
 						<div class="actions">
@@ -319,12 +547,12 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 								<p>Цена: <b>1 110</b> Р.</p>
 							</div>
 							<div class="order">
-								<input type="text" class="item-qtty" />
+								<input type="text" value="1" class="item-qtty" />
 								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability toorder">под заказ</div>
 							<div class="features">
-								<label><input type="checkbox" /> Уже в сравнении</label>
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
 								<label><input type="checkbox" /> Отложить</label>
 							</div>
 							<div class="detailed-lnk">
@@ -332,10 +560,10 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 							</div>
 						</div>
 					</li><!--track item-->
-					<li class="track-item track-item-title">
-						<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
-							<img src="" alt="" />
+							<img src="img/temp_track_product_image2.png" alt="" />
 							<span class="caption">Артикул: <em>S02939372</em></span>
 						</div>
 						<div class="actions">
@@ -344,12 +572,12 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 								<p>Цена: <b>1 110</b> Р.</p>
 							</div>
 							<div class="order">
-								<input type="text" class="item-qtty" />
+								<input type="text" value="1" class="item-qtty" />
 								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability toorder">под заказ</div>
 							<div class="features">
-								<label><input type="checkbox" /> Уже в сравнении</label>
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
 								<label><input type="checkbox" /> Отложить</label>
 							</div>
 							<div class="detailed-lnk">
@@ -357,10 +585,10 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 							</div>
 						</div>
 					</li><!--track item-->
-					<li class="track-item track-item-title">
-						<h2>Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+					<li class="track-item">
+						<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
 						<div class="fig">
-							<img src="" alt="" />
+							<img src="img/temp_track_product_image2.png" alt="" />
 							<span class="caption">Артикул: <em>S02939372</em></span>
 						</div>
 						<div class="actions">
@@ -369,12 +597,12 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 								<p>Цена: <b>1 110</b> Р.</p>
 							</div>
 							<div class="order">
-								<input type="text" class="item-qtty" />
+								<input type="text" value="1" class="item-qtty" />
 								<a class="order-buy-btn" href="#"><i class="ico ico-minicart"></i>Купить</a>
 							</div>
 							<div class="availability toorder">под заказ</div>
 							<div class="features">
-								<label><input type="checkbox" /> Уже в сравнении</label>
+								<label><input type="checkbox" /> Уже в сравнении</label><br/>
 								<label><input type="checkbox" /> Отложить</label>
 							</div>
 							<div class="detailed-lnk">
@@ -382,7 +610,6 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 							</div>
 						</div>
 					</li><!--track item-->
-					<!-- ================================= -->
 				</ul>
 			</div>
 		</div>
@@ -452,10 +679,11 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 				<img src="img/footer_promo.jpg" width="195" height="173" alt="" />
 			</div>
 		</div>
+
 		<div class="sub-footer clearfix">
 			<div class="copy">&copy; &laquo;Полезный магазин &laquo;InPresent&raquo;&raquo;, 2006 &ndash; 2011</div>
 			<div class="privacy">Вся информация на сайте носит справочный характер и не является публчной офертой</div>
-			<div class="counters"><img src="img/temp_counter.png" height="31" width="88" alt="" /></div>
+			<div class="counters"><img src="img/temp_counter.png" width="88" height="31" alt="" /></div>
 			<div class="dev">Designed by <a href="#">PAIVE Media Group</a></div>
 		</div>
 	</div><!-- //page-footer -->

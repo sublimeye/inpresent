@@ -131,6 +131,15 @@ __________________________________*/
 	font-size:12px;
 }
 
+/* empty cart
+--------------------------------*/
+.header-cart-empty .order-title {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #969696;
+}
+/*
+--------------------------------*/
 .detailed-lnk a {
 	font-size:12px;
 	color:#cb340c;
@@ -142,6 +151,32 @@ __________________________________*/
 
 .page-floating-cart .amount {
 	color: #ce3106;
+	font-size: 14px;
+}
+
+/* submenu
+--------------------------------*/
+.submenu {
+	font-size: 12px;
+}
+
+.submenu-title {
+	color: #8C645A;
+	font-weight: bold;
+}
+
+.submenu a {
+	color: #8C645A;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.submenu a:hover {
+	color: #DD441C;
+}
+
+.submenu .submenu-addon-link {
+	color: #6897D1;
 	font-size: 14px;
 }
 
@@ -224,9 +259,9 @@ __________________________________*/
 .track-item-title {
 	color:#512418;
 	font-size:16px;
-	margin-bottom:10px;
+	margin: 0 15px 10px 0;
 	line-height:1.3;
-	font-family:Calibri, Arial, Helvetica, sans-serif;
+	font-family: Calibri, Arial, Helvetica, sans-serif;
 }
 
 .track-item .price {
@@ -262,6 +297,7 @@ __________________________________*/
 
 .track-item .item-qtty {
 	color:#535456;
+	font-weight: bold;
 }
 
 .track-item .order-buy-btn {
@@ -279,7 +315,7 @@ __________________________________*/
 	color:#62ac3d;
 }
 
-.availability.order {
+.availability.toorder {
 	color:#f54f4f
 }
 
@@ -347,6 +383,7 @@ __________________________________*/
 
 .footer-categories-list a {
 	color:#b49e8b;
+	text-shadow: 1px 1px 1px #F1EFED;
 	text-decoration:none;
 }
 
@@ -375,4 +412,8 @@ __________________________________*/
 
 .sub-footer .dev a {
 	text-decoration:underline;
+}
+
+.sub-footer .dev a:hover {
+	text-decoration: none;
 }
