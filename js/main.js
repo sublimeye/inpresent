@@ -16,7 +16,6 @@ INP = {
 
 	init: function() {
 		this.activateScrollPlanes();
-
 		this.ManualScroll.init();
 		this.Sliders.init(this.sliderPrice);
 	},
@@ -55,14 +54,12 @@ INP = {
 				});
 
 				idx = values.indexOf(value);
-				console.log(values, value, idx);
 
 				if (idx && (value < values[idx - 1])) {
 					value = values[idx-1]
 				} else if (idx === 0 && (value > values[idx+1])) {
 					value = values[idx+1];
 				}
-				console.log(value);
 
 				slider.slider('values', idx, value)
 			});
@@ -104,11 +101,13 @@ INP = {
 				var container = $(elem);
 
 				$(this.prevBtn, container).bind('click.slider.prev', function(event) {
+					event.preventDefault();
 					this.slidePrev(container);
 					return false
 				}.bind(this));
 
 				$(this.nextBtn, container).bind('click.slider.next', function(event) {
+					event.preventDefault();
 					this.slideNext(container);
 					return false
 				}.bind(this));
@@ -120,8 +119,6 @@ INP = {
 					pos = -parseInt(elem.css('left'), 10),
 					step = (isNaN(pos) ? 0 : pos) - this.step,
 					newPos = (step > 0) ? step : 0;
-			console.log(pos);
-			console.log(this.step);
 			this.moveTo(elem, newPos);
 		},
 
@@ -136,7 +133,6 @@ INP = {
 		},
 
 		moveTo: function(elem, position) {
-			console.log();
 			elem.stop(true, false).animate({'left': -position}, 200);
 		},
 

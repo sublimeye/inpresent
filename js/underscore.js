@@ -1,3 +1,10 @@
+if (typeof window.console == 'undefined') {
+	window.console = {};
+	console.log = console.info = console.warn = console.debug = console.group = console.groupEnd = console.error = console.time = console.timeEnd = function(){};
+} else if (typeof window.console == 'object' && ($.browser.msie && $.browser.version == 8)) {
+	console.debug = console.group = console.groupEnd = console.time = console.timeEnd = function(){};
+}
+
 // Расширяем объект массива
 $A = Array.from = function(iterable) {
 	if (!iterable) {
