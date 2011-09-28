@@ -910,7 +910,7 @@ __________________________________*/
 
 .track-list-container {
 	overflow:hidden;
-	overflow-x:scroll;
+	/*overflow-x:scroll;*/
 }
 
 .track-controls {
@@ -927,8 +927,14 @@ __________________________________*/
 	border-bottom:1px solid #A3AC74;
 }
 
+.track-list-extender {
+	position:relative;
+	width:9999px;
+}
+
 .track-list {
-	width:5000px;
+	position:relative;
+	float:left;
 }
 
 .track-controls .controls {
