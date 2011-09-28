@@ -6,11 +6,13 @@
 	<title>InPresent</title>
 	<link href='layout.css' rel="stylesheet" type="text/css" />
 	<link href='typography.css' rel="stylesheet" type="text/css" />
+	<link href='jquery.slider.css' rel="stylesheet" type="text/css" />
 
 	<!--[if IE 7]><link rel="stylesheet" type="text/css" href='ie7.css' /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href='ie78.css' /><![endif]-->
 	<link rel="Shortcut Icon" type="image/x-icon" href="" />
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
 	<script type="text/javascript" src="js/underscore.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -225,11 +227,11 @@
 								<option value="1">категория какая-то</option>
 							</select>
 						</p>
-						<p class="price-select">
-							<big>Цена</big>: от <input type="number" min="0" /> до <input type="number" min="0" /> рублей
+						<p class="price-select price-slider-inputs">
+							<big>Цена</big>: от <input class="min-arm" type="number" step="1000" min="0" value="20000" /> до <input class="max-arm" type="number" step="1000" min="0" value="60000" /> рублей
 						</p>
 						<div class="price-range-select divider">
-
+							<div class="price-slider"></div>
 						</div>
 						<div class="manu-select divider">
 							<p class="title">Производитель:</p>
@@ -344,7 +346,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 				<div class="track-list-extender">
 					<ul class="track-list">
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка <br/>PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка <br/>PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="img/temp_track_product_image.png" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -367,7 +369,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 						</li>
 						<!--track item-->
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -393,7 +395,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 						</li>
 						<!--track item-->
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -419,7 +421,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 						</li>
 						<!--track item-->
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -445,7 +447,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 						</li>
 						<!--track item-->
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -471,7 +473,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 						</li>
 						<!--track item-->
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -519,7 +521,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 				<div class="track-list-extender">
 					<ul class="track-list">
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="img/temp_track_product_image2.png" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -545,7 +547,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 						</li>
 						<!--track item-->
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="img/temp_track_product_image2.png" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -571,7 +573,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 						</li>
 						<!--track item-->
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="img/temp_track_product_image2.png" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
@@ -597,7 +599,7 @@ As you might know, HTML5 introduced many exciting features for Web developers. O
 						</li>
 						<!--track item-->
 						<li class="track-item">
-							<h2 class="track-item-title">Перьевая ручка PARKER Vector Premium F181, Shiny SS</h2>
+							<h2 class="track-item-title"><a href="">Перьевая ручка PARKER Vector Premium F181, Shiny SS</a></h2>
 
 							<div class="fig">
 								<img src="img/temp_track_product_image2.png" alt=""/> <span class="caption">Артикул: <em>S02939372</em></span>
