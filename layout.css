@@ -429,7 +429,7 @@ body {
 	background: rgba(255,255,255,.9);
 }
 
-.categories-list .cl-item:hover:before {
+.categories-list .cl-item:hover:before, .categories-list .cl-item.active:before {
 	content: '';
 	position: absolute;
 	top: -6px;
@@ -440,11 +440,11 @@ body {
 
 }
 
-.categories-list .cl-item:hover {
+.categories-list .cl-item:hover, .categories-list .cl-item.active {
 	background: #F1EFED;
 }
 
-.categories-list .cl-item:hover > a {
+.categories-list .cl-item:hover > a, .categories-list .cl-item.active > a {
 	color: #502317;
 	font-size: 14px;
 }
@@ -492,7 +492,6 @@ body {
 	height: 12px;
 	border-left: 1px dotted #EEE7D4;
 	border-bottom: 1px dotted #EEE7D4;
-	/*background: red;*/
 }
 
 .submenu-title {
@@ -505,9 +504,6 @@ body {
 
 /* accordion
 --------------------------------*/
-.accordion-container {
-}
-
 .accordion {
 	position: relative;
 	top: 5px;
@@ -530,12 +526,10 @@ body {
 
 .accordion .wrapper {
 	position: relative;
-	background: red;
 }
 
 .accordion img {
-	/*position: absolute;*/
-	/*display: none;*/
+	-moz-user-select: none; -o-user-select:none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;
 }
 
 .accordion .content {
@@ -544,7 +538,9 @@ body {
 	right: 0;
 	bottom: 100px;
 	padding: 0 30px;
+	background: #fff;
 	background: rgba(255,255,255, .8);
+	display:none;
 }
 
 .accordion .title {
@@ -642,12 +638,12 @@ body {
 .presents-wizard .section {
 	position:absolute;
 	top:0;
-	/*width:600px;*/
-	width: 54.44%;
+	width:600px;
+	/*width: 54.44%;*/
 	height:200px;
 	left:50%;
-	/*margin-left:-300px;*/
-	margin-left:-26.5%;
+	margin-left:-300px;
+	/*margin-left:-26.5%;*/
 	z-index:1;
 }
 

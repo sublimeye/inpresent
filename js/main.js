@@ -46,6 +46,9 @@ INP = {
 		},
 
 		manualChange: function(inputs, slider) {
+			var min = slider.slider('option', 'min'),
+					max = slider.slider('option', 'max');
+
 			inputs.bind('keyup', function() {
 				var values = [],
 						value = parseInt(this.value, 10),
@@ -57,10 +60,22 @@ INP = {
 
 				idx = values.indexOf(value);
 
-				if (idx && (value < values[idx - 1])) {
-					value = values[idx-1]
-				} else if (idx === 0 && (value > values[idx+1])) {
-					value = values[idx+1];
+				if (idx) {
+					if (value < values[idx-1]) {
+						value = values[idx-1]
+					}
+
+					if (value < min) {
+						value = min;
+					}
+				} else {
+					if (value > values[idx+1]) {
+						value = values[idx+1]
+					}
+
+					if (value > max) {
+						value = max;
+					}
 				}
 
 				slider.slider('values', idx, value)
@@ -87,20 +102,35 @@ INP = {
 
 	Accordion: {
 		init: function() {
-			var lis = $( ".accordion > li" ), count = lis.length;
+			var lis = $( ".accordion > li" ),
+					count = lis.length,
+					fullWidth = $( '.accordion' ).width();
+
+			var av = 0;
+			for (var i = 0; i < count; i++) {
+				lis[i].style.left = Math.floor(av) + 'px';
+				av += fullWidth / count;
+			}
+
 			$( ".accordion > li" ).click( function() {
-				var $active = $( ".accordion > li.active" );
-				var $active2 = $( this.parentNode );
-				var newActive = $active2.get( 0 );
+				var $active = $( ".accordion > li.active" ),
+						$active2 = $(this),
+						active2 = $active2.get(0);
 
-				if ( newActive == $active.get( 0 ) ) return false;
+				if ( active2 == $active.get(0) ) {
+					return false
+				}
 
-				var nAct = $( ".accordion li:not(.active)" );
-				var fullWidth = $( '.accordion' ).width();
-				var newActiveWidth = $active2.width();
-				var activeCurrWidth = $active.width();
-				var oldAvgWidth = (fullWidth - activeCurrWidth) / (count - 1);
-				var avgWidth = (fullWidth - newActiveWidth) / (count - 1);
+				if ($active.length) {
+					$active.find('.content').fadeOut();
+				}
+
+				$active2.find('.content').fadeIn();
+
+				var newActiveWidth = $active2.width(),
+						activeCurrWidth = $active.width(),
+						oldAvgWidth = (fullWidth - activeCurrWidth) / (count - 1),
+						avgWidth = (fullWidth - newActiveWidth) / (count - 1);
 
 				var t = 0;
 				(function frame() {
@@ -109,8 +139,10 @@ INP = {
 					var dx = 0;
 					var avgDx = (avgWidth - oldAvgWidth) * progress + oldAvgWidth;
 					for ( var i = 0; i < count; i++ ) {
-						if ( i ) lis[i].style.left = Math.floor( dx ) + 'px';
-						if ( lis[i] == newActive ) {
+						if ( i ) {
+							lis[i].style.left = Math.floor( dx ) + 'px';
+						}
+						if ( lis[i] == active2 ) {
 							dx += (newActiveWidth - oldAvgWidth) * progress + oldAvgWidth;
 							continue;
 						}
@@ -120,7 +152,7 @@ INP = {
 						}
 						dx += avgDx;
 					}
-					if ( t < 5 ) setTimeout( frame , 30 );
+					if ( t < 8 ) setTimeout( frame , 30 );
 				})();
 				$active.removeClass( "active" );
 				$active2.addClass( "active" );
