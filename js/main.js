@@ -18,6 +18,8 @@ INP = {
 		this.activateScrollPlanes();
 		this.ManualScroll.init();
 		this.Sliders.init(this.sliderPrice);
+		this.globalListeners();
+		this.Accordion.init();
 	},
 
 	Sliders: {
@@ -83,6 +85,50 @@ INP = {
 		}
 	},
 
+	Accordion: {
+		init: function() {
+			var lis = $( ".accordion > li" ), count = lis.length;
+			$( ".accordion > li" ).click( function() {
+				var $active = $( ".accordion > li.active" );
+				var $active2 = $( this.parentNode );
+				var newActive = $active2.get( 0 );
+
+				if ( newActive == $active.get( 0 ) ) return false;
+
+				var nAct = $( ".accordion li:not(.active)" );
+				var fullWidth = $( '.accordion' ).width();
+				var newActiveWidth = $active2.width();
+				var activeCurrWidth = $active.width();
+				var oldAvgWidth = (fullWidth - activeCurrWidth) / (count - 1);
+				var avgWidth = (fullWidth - newActiveWidth) / (count - 1);
+
+				var t = 0;
+				(function frame() {
+					t++;
+					var progress = t / 8;
+					var dx = 0;
+					var avgDx = (avgWidth - oldAvgWidth) * progress + oldAvgWidth;
+					for ( var i = 0; i < count; i++ ) {
+						if ( i ) lis[i].style.left = Math.floor( dx ) + 'px';
+						if ( lis[i] == newActive ) {
+							dx += (newActiveWidth - oldAvgWidth) * progress + oldAvgWidth;
+							continue;
+						}
+						if ( lis[i] == $active.get( 0 ) ) {
+							dx += (avgWidth - activeCurrWidth) * progress + activeCurrWidth;
+							continue;
+						}
+						dx += avgDx;
+					}
+					if ( t < 5 ) setTimeout( frame , 30 );
+				})();
+				$active.removeClass( "active" );
+				$active2.addClass( "active" );
+				return false;
+			} );
+		}
+	},
+
 	ManualScroll: {
 		elements: '.product-track',
 		prevBtn: '.controls .left',
@@ -134,16 +180,13 @@ INP = {
 
 		moveTo: function(elem, position) {
 			elem.stop(true, false).animate({'left': -position}, 200);
-		},
-
-		activate: function() {
-
 		}
+
 	},
 	/**
 	 * Включаем плавный scrollPlane слайдер для всех элементов описаных в scrollPlaneSelectors
 	 */
-	activateScrollPlanes: function() {
+	activateScrollPlanes: function(update) {
 		for (var i=0; i < this.scrollPlane.elements.length; i++) {
 			var container = this.scrollPlane.elements[i],
 					target = container.split('-container');
@@ -157,7 +200,8 @@ INP = {
 					target: $(targetElem).width()
 				};
 
-				this.createScrollPlane({container: $(element), target: targetElem, widthIndex: index})
+				!update && this.createScrollPlane({container: $(element), target: targetElem, widthIndex: index});
+
 			}.bind(this));
 		}
 	},
@@ -203,7 +247,14 @@ INP = {
 				}
 			});
 		}
+	},
+
+	globalListeners: function() {
+		$(window).resize(_.debounce(function() {
+			this.activateScrollPlanes(true);
+		}.bind(this) , 500));
 	}
+
 };
 
 $(document).ready(function() {
