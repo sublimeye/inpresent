@@ -611,6 +611,11 @@ body {
 	border-right: 0;
 }
 
+.page-floating-cart a {
+	display:block;
+	text-decoration:none;
+}
+
 .floating-cart-figure {
 	position: absolute;
 	top: 25px;
@@ -1464,6 +1469,5 @@ __________________________________*/
 .sub-footer .dev {
 	position:absolute;
 	right:0;
-	top:0px;
+	top:0;
 }
-
