@@ -151,7 +151,7 @@ __________________________________*/
 
 .page-floating-cart .amount {
 	color: #ce3106;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 /* submenu
@@ -166,6 +166,8 @@ __________________________________*/
 }
 
 .submenu a {
+	display:inline-block;
+	padding:0 5px;
 	color: #8C645A;
 	font-weight: normal;
 	text-decoration: none;
@@ -173,6 +175,7 @@ __________________________________*/
 
 .submenu a:hover {
 	color: #DD441C;
+	background:#FEFEFE;
 }
 
 .submenu .submenu-addon-link {
@@ -258,7 +261,6 @@ __________________________________*/
 __________________________________*/
 .track-item-title {
 	font-size:16px;
-	margin: 0 15px 10px 0;
 	line-height:1.3;
 	font-family: Calibri, Arial, Helvetica, sans-serif;
 }
@@ -398,6 +400,17 @@ __________________________________*/
 
 .footer-categories-list a:hover {
 	text-decoration:underline;
+}
+
+.highlight-blue a {
+	color:#45659f;
+	text-shadow: 1px 1px 1px #E7DED0, -1px 0 1px #E7DED0, -1px -1px 1px #E7DED0, -1px 1px 1px #E7DED0, 1px -1px 1px #E7DED0;
+}
+
+.highlight-red {
+	color:#fff;
+	font-size:18px;
+	text-shadow:0 1px 2px #983E17;
 }
 
 /*  =sub-footer

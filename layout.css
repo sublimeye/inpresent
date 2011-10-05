@@ -367,8 +367,10 @@ body {
 .page-header-categories {
 	position:relative;
 	min-height:34px;
-	-moz-border-radius:3px;
-	border-radius:3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 	box-shadow:0 -2px 4px #D1C6A2;
 	padding-top:20px;
 	padding-bottom: 30px;
@@ -468,6 +470,9 @@ body {
 	padding: 0 0 10px 0;
 	z-index: 999;
 	background: rgba(255,255,255,.9);
+	border:1px solid #F3F0E1;
+	border-top:0;
+	box-shadow: 0 2px 3px #ECEADD
 }
 
 .categories-list .cl-item:hover:before, .categories-list .cl-item.active:before {
@@ -505,17 +510,18 @@ body {
 }
 
 .submenu .submenu-wrapper td {
-	padding: 10px 20px 5px;
+	padding: 10px 0 5px;
 	background: 0;
 	vertical-align: top;
 }
 
 .submenu .submenu-wrapper td:first-child {
-	padding-right: 30px;
+	padding-right: 5px;
 }
 
 .submenu-list {
-	margin-left: 15px;
+	margin-left: 25px;
+	margin-right:20px;
 	margin-bottom: 2ex;
 	white-space: nowrap;
 }
@@ -536,7 +542,13 @@ body {
 }
 
 .submenu-title {
-	margin-bottom: .5ex;
+	margin-bottom: 1ex;
+}
+
+.submenu-title-bg {
+	background:#F6F3E3;
+	line-height:1.6;
+	padding:0 0 0 20px;
 }
 
 .submenu-list .star {
@@ -605,10 +617,13 @@ body {
 	position:fixed;
 	top:200px;
 	right:0;
-	padding: 3px 3px 3px 3px;
+	/*width:60px;*/
+	padding: 3px 0 47px 2px;
 	border: 1px solid #E18C6D;
-	border-bottom: 0;
+
+	/*border-bottom: 0;*/
 	border-right: 0;
+	white-space:nowrap;
 }
 
 .page-floating-cart a {
@@ -1110,13 +1125,11 @@ __________________________________*/
 .track-item {
 	position:relative;
 	float:left;
-	width:350px;
-	/*padding-right: 20px;*/
-	/*padding-left: 20px;*/
-	/*padding-right: 20px;*/
+	width:331px;
+	padding-bottom:2px;
 	margin-right: 40px;
 	list-style:none;
-	border-bottom:1px solid #CFC7C7;
+	border-bottom:1px solid  #E5E2E2;
 }
 
 .track-item:after {
@@ -1140,11 +1153,10 @@ __________________________________*/
 .track-item:before {
 	position:absolute;
 	left:0;
-	bottom: 0;
+	bottom: 0px;
 	content:'';
 	width:100%;
-	/*border-bottom: 1px solid #E6E4E4;*/
-	/*border-bottom: 1px solid red;*/
+	border-bottom: 1px solid #CFC5C5;
 	z-index: 10;
 }
 
@@ -1185,7 +1197,7 @@ __________________________________*/
 
 .track-item .actions {
 	float:left;
-	width:139px;
+	width:120px;
 	padding-left:10px;
 }
 
@@ -1193,7 +1205,7 @@ __________________________________*/
 __________________________________*/
 .availability {
 	position:absolute;
-	right:34px;
+	right:5px;
 	padding:0 10px;
 	height:12px;
 	line-height:12px;
@@ -1208,6 +1220,10 @@ __________________________________*/
 .availability.toorder {
 	border:1px solid #EDC5C5;
 	background:#F5E7E7;
+}
+
+.track-item-title {
+	margin: 0 15px 5px 0;
 }
 
 .track-item .price {
@@ -1226,6 +1242,16 @@ __________________________________*/
 	border-bottom-right-radius: 7px;
 	background:url("img/track_price_bg.png") repeat-y;
 	/*box-shadow: 0 3px 5px #C4C3C4;*/
+}
+
+.track-item .price:after {
+	position:absolute;
+	width:116px;
+	height:9px;
+	bottom:-9px;
+	left:5px;
+	content:'';
+	background:url("img/price_shadow.png");
 }
 
 .track-item .price p {
@@ -1295,7 +1321,7 @@ __________________________________*/
 	margin-top:26px;
 }
 .features input {
-	margin-right:10px;
+	margin-right:3px;
 	margin-bottom:6px;
 }
 
@@ -1437,9 +1463,18 @@ __________________________________*/
 }
 
 .footer-promo {
+	background:url("img/footer_promo.jpg");
 	position: absolute;
 	right: 0;
 	top: 0;
+	width:195px;
+	height:113px;
+	padding:60px 0 0 0;
+	text-align:center;
+}
+
+.footer-promo p {
+	margin-bottom:0;
 }
 
 .sub-footer {
