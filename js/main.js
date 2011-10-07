@@ -18,8 +18,61 @@ INP = {
 		this.activateScrollPlanes();
 		this.ManualScroll.init();
 		this.Sliders.init(this.sliderPrice);
-		this.globalListeners();
 		this.Accordion.init();
+		this.Navigation.init();
+		this.globalListeners();
+
+
+	},
+
+	Navigation: {
+		submenus: null,
+		isOpen: null,
+
+		init: function() {
+			var items = $('.cl-item');
+			this.submenus = items.find('.submenu');
+
+			items.hover(
+					function(e) {
+						this.showSubmenu(e);
+					}.bind(this),
+					function() {
+						this.hideSubmenu();
+					}.bind(this)
+			);
+		},
+
+		showSubmenu: function(e) {
+			
+			var elem = $(e.target),
+					sub = elem.find('.submenu'),
+					_nav = this;
+
+			this.hideSubmenu();
+
+			if (sub.length) {
+				console.log('sub length: ', sub.length);
+				sub.stop(true,true).fadeIn();
+				_nav.isOpen = true;
+			}
+		},
+
+		hideSubmenu: function(callback) {
+			if (this.isOpen) {
+				this.submenus.stop(true,true).fadeOut(300, function() {
+					this.isOpen = false;
+				}.bind(this));
+
+			}
+/*
+			if (this.submenus.length) {
+				this.submenus.stop(true,true).fadeOut(300, function() {
+					callback && callback();
+				});
+			}
+*/
+		}
 	},
 
 	Sliders: {

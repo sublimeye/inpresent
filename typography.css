@@ -147,6 +147,12 @@ __________________________________*/
 
 .categories-list a {
 	color:#fff;
+	text-decoration:none;
+}
+
+
+._categories-list .cl-item:hover .cl-item-rel > a, .categories-list .cl-item.over .cl-item-rel > a, .categories-list .cl-item.active .cl-item-rel > a {
+	color: #502317;
 }
 
 .page-floating-cart .amount {
